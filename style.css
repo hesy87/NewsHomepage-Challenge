@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'challenge';
+    src: url('./assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+body {
+    font-family: 'challenge';
+    background-color: hsl(36, 100%, 99%);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+a:hover {
+    color: hsl(35, 77%, 62%);
+}
+
+.news {
+    background-color: hsl(240, 100%, 5%)
+}
+
+.news>div {
+    border-bottom: 1px solid hsl(236, 13%, 42%);
+}
+
+.news>div:nth-child(3) {
+    border: none;
+}
+
+.news>div >h1 {
+    color: hsl(35, 77%, 62%);
+}
+
+.news>div>h3 {
+    color: hsl(36, 100%, 99%);
+}
+
+.news>div>h3:hover {
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+}
+
+.news>div>p {
+    color: hsl(236, 13%, 42%)
+}
