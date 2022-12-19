@@ -15,6 +15,7 @@ a {
 
 a:hover {
     color: hsl(35, 77%, 62%);
+    transition: all 0.2s;
 }
 
 .news {
@@ -40,8 +41,56 @@ a:hover {
 .news>div>h3:hover {
     color: hsl(35, 77%, 62%);
     cursor: pointer;
+    transition: all 0.2s;
 }
 
 .news>div>p {
     color: hsl(236, 13%, 42%)
+}
+
+.cards>div>img {
+    width: 10rem;
+    height: 8rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+.cards>div>div>h4 {
+    color: hsl(236, 13%, 42%);
+    font-weight: 800;
+    opacity: 0.6;
+}
+
+.cards>div>div>h5 {
+    color: hsl(240, 100%, 5%);
+    font-weight: 700;
+    margin: 1rem 0
+}
+
+.cards>div>div>h5:hover {
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.cards>div>div>p {
+    font-size: 15px;
+    color: hsl(236, 13%, 42%);
+    font-weight: 600;
+}
+
+.readMoreBtn>button {
+    letter-spacing: 4px;
+    padding: 0.75rem 3rem;
+    text-align: center;
+    color: white;
+    border: none;
+    background: hsl(5, 85%, 63%);
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+
+.readMoreBtn {
+    font-size: 15px;
+    color: hsl(236, 13%, 42%);
 }

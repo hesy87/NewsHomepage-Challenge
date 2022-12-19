@@ -27,9 +27,31 @@
 </head>
 
 <body>
+  <div class="d-flex flex-row-reverse d-sm-none justify-content-between my-4 mx-3">
+    <a class="d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive"
+      aria-controls="offcanvasResponsive"><img src="./assets/images/icon-menu.svg" alt=""></a>
+    <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="offcanvasResponsive"
+      aria-labelledby="offcanvasResponsiveLabel">
+      <div class="offcanvas-header">
+        <div class="col-9"></div>
+        <a type="button" class="" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive"
+          aria-label="Close"><img src="./assets/images/icon-menu-close.svg" alt=""></a>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="d-flex flex-column list-unstyled ">
+          <li><a href="#">Home</a></li>
+          <li class="my-4"><a href="#">New</a></li>
+          <li><a href="#">Popular</a></li>
+          <li class="my-4"><a href="#">Trending</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+      </div>
+    </div>
+    <img src="./assets/images/logo.svg" alt="LOGO">
+  </div>
   <div class="container">
-    <div class="row my-4">
-      <div class="col d-flex flex-row align-content-center">
+    <div class="row my-4 d-none d-sm-block">
+      <div class="col d-flex flex-row align-content-center ">
         <div class="col-6">
           <img src="./assets/images/logo.svg" alt="LOGO">
         </div>
@@ -44,23 +66,24 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-8">
+    <div class="row d-flex flex-column flex-sm-row">
+      <div class="col-12 col-sm-8">
         <div class="row">
-          <img src="./assets/images/image-web-3-desktop.jpg" alt="colorful">
+          <img class="d-none d-lg-block" src="./assets/images/image-web-3-desktop.jpg" alt="colorful">
+          <img class="d-sm-none" src="./assets/images/image-web-3-mobile.jpg" alt="">
         </div>
-        <div class="row">
-          <div class="col-6 display-2 fw-bold">The Bright Future of Web 3.0?</div>
-          <div class="col-6">
+        <div class="row d-flex flex-column flex-sm-row mt-4">
+          <div class="col-10 col-sm-6 display-3 fw-bold">The Bright Future of Web 3.0?</div>
+          <div class="col-12 col-sm-6 readMoreBtn">
             <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the
               hands of the
               people.
               But is it really fulfilling its promise?</p>
-            <button>Read more</button>
+            <button class="mt-5 shadow">Read more</button>
           </div>
         </div>
       </div>
-      <div class="col-4 news shadow-sm d-flex flex-column justify-content-around">
+      <div class="col-12 col-sm-4 news shadow-sm d-flex flex-column justify-content-around">
         <div class="d-flex flex-column align-content-center">
           <h1>New</h1>
           <h3>Hydrogen VS Electric Cars</h3>
@@ -78,7 +101,7 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row d-flex flex-column flex-sm-row mt-5 cards">
       <div class="d-flex col-4">
         <img src="./assets/images/image-retro-pcs.jpg" alt="">
         <div>
@@ -121,6 +144,10 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Hesam Mahmoodinia</a>.
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
 </body>
 
 </html>
